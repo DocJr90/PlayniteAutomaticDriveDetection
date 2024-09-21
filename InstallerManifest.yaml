@@ -4,5 +4,5 @@ Packages:
     RequiredApiVersion: 6.11.0
     ReleaseDate: 2024-09-21
     PackageUrl: https://github.com/DocJr90/PlayniteAutomaticDriveDetection/releases/download/v6.3862.4738.6185/AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6_6_3862_4738_6185.pext
-    ChangeLog:
+    Changelog:
       - Initial release.

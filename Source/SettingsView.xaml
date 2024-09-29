@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Dockery.Playnite.AutomaticDriveDetection.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="400" d:DesignWidth="600">
+	<StackPanel>
+		<StackPanel Margin="15, 15, 15, 0">
+			<TextBlock Margin="0, 0, 0, 0"
+					   TextAlignment="Center"
+					   TextWrapping="NoWrap"
+					   FontWeight="Bold"
+					   Text="(Playnite) Automatic Drive Detection (by Mark A. Dockery Jr.)"/>
+			<TextBlock Margin="0, 10, 0, 0"
+					   TextWrapping="Wrap"
+					   Text="On Playnite initialization, this plug-in/add-on/extension attempts to locate an active drive with a volume label containing the specified string; if located, it iterates through the game library validating install paths, where it replaces the drive letters in specified paths with the drive letter of the located drive. Games lacking an absolute path (e.g.: &quot;C:\&quot;) and those utilizing {PlayniteDir} in their paths are explicitly ignored."/>
+		</StackPanel>
+		<StackPanel Margin="15, 25, 15, 0" Orientation="Horizontal">
+			<TextBlock Margin="0, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Volume Label String"/>
+			<TextBox Margin="10, 0, 0, 0"
+					 MinWidth="200"
+					 VerticalAlignment="Center"
+					 Text="{Binding Settings.VolumeLabelText}"/>
+			<TextBlock Margin="20, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Case-Sensitive"/>
+			<CheckBox Margin="10, 0, 0, 0"
+					  VerticalAlignment="Center"
+					  IsChecked="{Binding Settings.VolumeLabelTextCaseSensitive}"/>
+			<TextBlock Margin="20, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Entire String"/>
+			<CheckBox Margin="10, 0, 0, 0"
+					  VerticalAlignment="Center"
+					  IsChecked="{Binding Settings.VolumeLabelTextEntireString}"/>
+		</StackPanel>
+		<StackPanel Margin="15, 10, 15, 0">
+			<TextBlock Margin="15, 0, 15, 0"
+					   TextWrapping="Wrap"
+					   Text="The &quot;Entire String&quot; option indicates that the volume label should match the specified string exactly apart from letter case. To force case-sensitivity as well, enable the &quot;case-sensitive&quot; option. Note that the &quot;case-sensitive&quot; option enforces case-sensitivity even when the &quot;entire string&quot; option is disabled."/>
+		</StackPanel>
+		<StackPanel Margin="15, 25, 15, 0" Orientation="Horizontal">
+			<TextBlock Margin="0, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Drive Selection Behavior"
+					   Name="DriveSelectionBehaviorBox"/>
+			<ComboBox Margin="10, 0, 0, 0" MinWidth="275" VerticalAlignment="Center" SelectedIndex="{Binding Settings.DriveSelectionBehavior}">
+				<ComboBoxItem>The first drive located.</ComboBoxItem>
+				<ComboBoxItem>The last drive located.</ComboBoxItem>
+				<ComboBoxItem>Alphabetically ascending ("A" before "B").</ComboBoxItem>
+				<ComboBoxItem>Alphabetically descending ("B" before "A").</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Margin="15, 20, 15, 0" Orientation="Horizontal">
+			<TextBlock Margin="0, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Path Replacement Behavior"
+					   Name="PathReplacementBehaviorBox"/>
+			<ComboBox Margin="10, 0, 0, 0" MinWidth="355" VerticalAlignment="Center" SelectedIndex="{Binding Settings.PathReplacementBehavior}">
+				<ComboBoxItem>The path is invalid and the specified drive isn't present.</ComboBoxItem>
+				<ComboBoxItem>The path is invalid - even when the specified drive is present.</ComboBoxItem>
+				<ComboBoxItem>Even if the path is valid.</ComboBoxItem>
+			</ComboBox>
+		</StackPanel>
+		<StackPanel Margin="15, 20, 15, 0" Orientation="Horizontal">
+			<TextBlock Margin="0, 0, 0, 0"
+					   VerticalAlignment="Center"
+					   Text="Only change path if new path actually exists"/>
+			<CheckBox Margin="10, 0, 0, 0"
+					  VerticalAlignment="Center"
+					  IsChecked="{Binding Settings.OnlyChangeIfNewPathExists}"/>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

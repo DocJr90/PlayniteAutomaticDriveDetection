@@ -5,4 +5,10 @@ Packages:
     ReleaseDate: 2024-09-29
     PackageUrl: https://github.com/DocJr90/PlayniteAutomaticDriveDetection/releases/download/v6.3862.4785.8489/AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6_6_3862_4785_8489.pext
     Changelog:
-      - Initial release.
+      - Added case-sensitivity setting for volume label string matching.
+      - Added "entire string" setting for volume label string matching.
+      - Added explanation for the case-sensitivity and "entire string" settings.
+      - Added "drive selection behavior" setting to provide additional control of drive selection.
+      - Added "path replacement behavior" setting to provide additional control of path replacement.
+      - Renamed "verify new paths" setting to "only change path if new path actually exists"; provides a better understanding of the option.
+      - Added title, autho, introduction, and general explanation to the settings page.

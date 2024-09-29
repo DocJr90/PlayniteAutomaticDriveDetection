@@ -1,8 +1,8 @@
 AddonId: AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6
 Packages:
-  - Version: 6.3862.4738.6185
+  - Version: 6.3863.1985.2503
     RequiredApiVersion: 6.11.0
-    ReleaseDate: 2024-09-21
+    ReleaseDate: 2024-09-29
     PackageUrl: https://github.com/DocJr90/PlayniteAutomaticDriveDetection/releases/download/v6.3862.4785.8489/AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6_6_3862_4785_8489.pext
     Changelog:
       - Initial release.

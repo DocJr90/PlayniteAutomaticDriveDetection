@@ -1,7 +1,7 @@
-﻿Id: AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6
-Name: AutomaticDriveDetection
+Id: AutomaticDriveDetection_bb3f1f23-6dc6-4136-bd7e-1a2cd4f6e9a6
+Name: Automatic Drive Detection
 Author: Mark A. Dockery Jr.
-Version: 6.3862.4785.8489
+Version: 6.3863.1985.2503
 Module: Dockery.Playnite.AutomaticDriveDetection.dll
 Type: GenericPlugin
 Icon: Icon.png

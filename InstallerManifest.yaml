@@ -11,4 +11,4 @@ Packages:
       - Added "drive selection behavior" setting to provide additional control of drive selection.
       - Added "path replacement behavior" setting to provide additional control of path replacement.
       - Renamed "verify new paths" setting to "only change path if new path actually exists"; provides a better understanding of the option.
-      - Added title, autho, introduction, and general explanation to the settings page.
+      - Added title, author, introduction, and general explanation to the settings page.
